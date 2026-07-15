@@ -1,0 +1,81 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python packages
+*.egg-info/
+dist/
+build/
+*.egg
+
+# PyInstaller builds
+*.spec
+*.manifest
+
+# Test files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NovaEdit generated files
+.nova/
+nova_projects/
+user_settings.json
+workspace.json
+
+# AI data
+ai_memory/
+ai_cache/
+models/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Installer output
+installers/
+release/
+packages/
+
+# Compiled applications
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.AppImage
+*.deb
+*.rpm
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Environment variables
+.env
+
+# Build artifacts
+out/
+output/
