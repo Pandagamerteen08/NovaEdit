@@ -1,6 +1,6 @@
 NovaEdit Privacy Policy
 
-Last Updated: [Insert Date]
+Last Updated: 7/15/2026
 
 Owner: Next Step Studios
 
