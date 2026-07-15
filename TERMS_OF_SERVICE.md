@@ -1,7 +1,9 @@
 NovaEdit Terms of Service
 
-Last Updated: 7/15/26
+Last Updated: 7/15/2026
+
 Owner: Next Step Studios
+
 Product: NovaEdit
 
 IMPORTANT: Replace any placeholder information before publishing.
