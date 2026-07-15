@@ -20,3 +20,4 @@ Windows: NovaEdit_Setup.exe or NovaEdit_Installer.exe
 
 macOS: NovaEdit_Setup.dmg or NovaEdit_Installer.pkg
 
+Linux: 
