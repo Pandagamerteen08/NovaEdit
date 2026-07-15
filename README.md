@@ -1034,3 +1034,229 @@ Thank you for checking out NovaEdit.
 
 If you’d like to contribute, report a bug, suggest a feature, or follow development, visit the GitHub repository and join the community.
 
+
+
+
+
+⸻
+
+Important Notes
+
+Project Status
+
+NovaEdit is currently under active development. Features, user interface elements, documentation, and project goals may change as development progresses. Some functionality described in this document represents planned features and may not yet be available.
+
+Version Information
+
+Unless otherwise stated, features described in this README refer to the latest planned release. If a feature is marked as Planned, Future, or Coming Soon, it is not currently available.
+
+Cross-Platform First
+
+NovaEdit is designed to provide a consistent experience across Windows, Linux, and macOS. While some platform-specific features may differ, the overall editing experience should remain familiar regardless of operating system.
+
+Offline First
+
+The editor is designed to function without an internet connection. Internet access is only expected to be required for optional services such as update checking, downloading plugins, future AI providers, or accessing online documentation.
+
+Community Feedback
+
+NovaEdit is a community-driven project. Suggestions, feature requests, bug reports, and constructive feedback are encouraged and help shape future releases.
+
+⸻
+
+Project Philosophy
+
+NovaEdit is built around several core principles.
+
+Keep It Lightweight
+
+Features should improve productivity without making the application unnecessarily large or complicated.
+
+User Choice
+
+Optional features should remain optional whenever possible.
+
+Privacy
+
+Users should always understand when information leaves their computer.
+
+Performance
+
+Fast startup times, responsive editing, and efficient resource usage are long-term priorities.
+
+Learnability
+
+NovaEdit should remain approachable for beginners while still offering tools that experienced developers appreciate.
+
+Back to Top
+
+⸻
+
+Distribution
+
+NovaEdit is planned to be distributed through multiple official sources.
+
+Possible distribution methods include:
+
+* GitHub Releases
+* Official NovaEdit Website
+* Microsoft Store (planned)
+* Steam (planned)
+* Linux package repositories (planned)
+* Additional package managers where appropriate
+
+Availability may vary depending on operating system and release version.
+
+Back to Top
+
+⸻
+
+Steam Availability (Planned)
+
+NovaEdit may eventually become available on Steam as a free application.
+
+If released on Steam:
+
+* The editor will remain free to download.
+* Core editing functionality will remain free.
+* The Steam version will provide the same editing experience as other official releases.
+* Steam Cloud integration may be explored in the future.
+* Steam achievements may be considered for fun, educational milestones.
+
+NovaEdit is not intended to become a game, and it will never include gameplay mechanics or “pay-to-win” systems.
+
+Future optional purchases, if introduced, would focus on supporting continued development and may include cosmetic or convenience items such as:
+
+* Theme packs
+* Icon packs
+* Cosmetic profile customization
+* Optional supporter bundles
+
+These ideas are exploratory and are not planned for Version 0.1.
+
+Back to Top
+
+⸻
+
+Advertising
+
+NovaEdit does not display advertisements.
+
+The goal is to provide a clean and distraction-free development environment.
+
+There are currently no plans to introduce banner ads, pop-up advertisements, or third-party advertising networks into the editor.
+
+Back to Top
+
+⸻
+
+Monetization
+
+NovaEdit is intended to remain free.
+
+If optional monetization is introduced in the future, it will never remove access to the editor itself.
+
+Potential future support options may include:
+
+* Donations
+* Supporter Packs
+* Cosmetic Themes
+* Icon Packs
+* Optional AI service subscriptions (if external AI providers require usage fees)
+
+Any optional purchases would help fund continued development without restricting access to the core editor.
+
+Back to Top
+
+⸻
+
+Reporting Bugs
+
+If you discover a bug, please include as much information as possible when opening an issue.
+
+Helpful information includes:
+
+* NovaEdit version
+* Operating system
+* Steps to reproduce
+* Expected behavior
+* Actual behavior
+* Screenshots (if applicable)
+* Crash logs (if available)
+
+Detailed reports help us resolve issues more quickly.
+
+Back to Top
+
+⸻
+
+Feature Requests
+
+Have an idea?
+
+Open a GitHub Discussion or Feature Request.
+
+When suggesting a feature, consider including:
+
+* The problem you’re trying to solve
+* Your proposed solution
+* Alternative ideas
+* Mockups or screenshots (optional)
+
+Every suggestion is appreciated, even if it cannot be implemented immediately.
+
+Back to Top
+
+⸻
+
+Security
+
+If you discover a security vulnerability, please avoid creating a public issue until the problem has been reviewed.
+
+See SECURITY.md for instructions on responsibly reporting security concerns.
+
+Back to Top
+
+⸻
+
+Acknowledgements
+
+NovaEdit is inspired by many excellent development tools and the open source community.
+
+While NovaEdit has its own goals and identity, appreciation is extended to projects such as:
+
+* Notepad++
+* Visual Studio Code
+* Sublime Text
+* Geany
+* Vim
+* Neovim
+* Kate
+* PyCharm
+* Qt Creator
+
+These projects have influenced software development workflows for millions of developers.
+
+Back to Top
+
+⸻
+
+Disclaimer
+
+NovaEdit is provided “as is” under the terms of the MIT License.
+
+Although every effort is made to provide a stable and reliable editor, no software is completely free from bugs.
+
+Always maintain backups of important work.
+
+Back to Top
+
+⸻
+
+Thank You
+
+Whether you’re writing your very first “Hello, World!” program or maintaining a large software project, thank you for considering NovaEdit.
+
+We hope NovaEdit becomes a tool that helps you learn, create, and build amazing software.
+
+Happy coding!
