@@ -1,0 +1,33 @@
+[Placeholder Installer File]
+
+This is a placeholder for the NovaEdit Windows installer executable.
+
+Installation Details:
+- Platform: Windows (x86_64)
+- Version: 0.1.0+
+- Build Date: 2024
+- Size: Approximately 50-100 MB (actual size will vary)
+
+Installation Instructions:
+
+1. Run this installer
+2. Choose installation directory (default: C:\Program Files\NovaEdit)
+3. Select shortcuts creation options
+4. Choose start menu folder
+5. Click "Install" to begin installation
+6. Wait for installation to complete
+7. Launch NovaEdit from Start Menu or desktop shortcut
+
+System Requirements:
+- Windows 7 SP1 or later
+- 2GB RAM (4GB recommended)
+- 500MB free disk space
+- Internet connection for optional features
+
+For more information or alternative installation methods:
+- Visit: https://github.com/Pandagamerteen08/NovaEdit
+- Check documentation in docs/USER_GUIDE.md
+- Report issues: https://github.com/Pandagamerteen08/NovaEdit/issues
+
+NOTE: This is a placeholder file. The actual executable will be generated
+during the build process using the scripts in packaging/windows/
