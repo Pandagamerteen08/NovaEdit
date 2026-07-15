@@ -18,6 +18,12 @@ The official installer name is currently planned as:
 
 Windows: NovaEdit_Setup.exe or NovaEdit_Installer.exe
 
-macOS: NovaEdit_Setup.dmg or NovaEdit_Installer.pkg
+macOS: 
 
-Linux: NovaEdit_Setup.apoimage or NovaEdit_Installer.exe
+NovaEdit_Setup.dmg or NovaEdit_Setup.pkg 
+
+or NovaEdit_Installer.pkg NovaEdit_Installer.dmg
+
+Linux: NovaEdit_Setup.appimage or NovaEdit_Setup.deg or NovaEdit_Setup.rpm
+
+NovaEdit_Installer.deg or NovaEdit_Installer.appimage or NovaEdit_Installer.rpm
