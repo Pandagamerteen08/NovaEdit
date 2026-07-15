@@ -22,8 +22,11 @@ macOS:
 
 NovaEdit_Setup.dmg or NovaEdit_Setup.pkg 
 
-or NovaEdit_Installer.pkg NovaEdit_Installer.dmg
+NovaEdit_Installer.pkg or NovaEdit_Installer.dmg
 
-Linux: NovaEdit_Setup.appimage or NovaEdit_Setup.deg or NovaEdit_Setup.rpm
+Linux: 
 
-NovaEdit_Installer.deg or NovaEdit_Installer.appimage or NovaEdit_Installer.rpm
+NovaEdit_Setup.appimage or 
+NovaEdit_Setup.deb or NovaEdit_Setup.rpm
+
+NovaEdit_Installer.deb or NovaEdit_Installer.appimage or NovaEdit_Installer.rpm
