@@ -1,48 +1,80 @@
-NovaEdit
+# NovaEdit
 
-A modern, lightweight, cross-platform code editor built primarily with Python.
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-in%20active%20development-yellow.svg)
+![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![Built with Python](https://img.shields.io/badge/built%20with-Python-3776AB.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-⸻
+> A modern, lightweight, cross-platform code editor built primarily with Python.
 
-Table of Contents
+<!-- Replace the line below with a real screenshot once one is available -->
+![NovaEdit screenshot placeholder](docs/images/screenshot-placeholder.png)
+*Screenshot coming soon — NovaEdit is currently in early, active development.*
 
-* About NovaEdit
-* Why NovaEdit Exists
-* Project Goals
-* Current Status
-* Features
-* Planned Features
-* Supported Programming Languages
-* Installation
-* System Requirements
-* Project Workspaces
-* Customization
-* Nova AI
-* Plugin System
-* Integrated Browser
-* Compiler Detection
-* Roadmap
-* Frequently Asked Questions
-* Contributing
-* License
+> **Note:** Badge and image URLs above are placeholders. Update them once the repository, CI, and screenshots are live.
 
-⸻
+---
 
-About NovaEdit
+## Table of Contents
+
+- [About NovaEdit](#about-novaedit)
+- [Why NovaEdit Exists](#why-novaedit-exists)
+- [Project Goals](#project-goals)
+- [Current Status](#current-status)
+- [Features](#features)
+  - [Current Features (Version 0.1)](#current-features-version-01)
+  - [Editor Features](#editor-features)
+  - [File Explorer](#file-explorer)
+  - [Themes](#themes)
+  - [Settings](#settings)
+  - [Built-in Browser](#built-in-browser)
+  - [File Management](#file-management)
+  - [Search](#search)
+  - [Keyboard Shortcuts](#keyboard-shortcuts)
+  - [Automatic Updates](#automatic-updates)
+  - [Privacy](#privacy)
+  - [Accessibility](#accessibility)
+  - [Performance Goals](#performance-goals)
+- [Roadmap and Planned Features](#roadmap-and-planned-features)
+- [Supported Programming Languages](#supported-programming-languages)
+- [Nova AI](#nova-ai)
+  - [Design Philosophy](#design-philosophy)
+  - [Planned Capabilities](#planned-capabilities)
+  - [Project Awareness](#project-awareness)
+  - [AI Privacy and Data Use](#ai-privacy-and-data-use)
+- [Plugin System](#plugin-system)
+  - [Plugin Philosophy](#plugin-philosophy)
+- [Git Integration](#git-integration)
+- [Compiler Detection](#compiler-detection)
+- [Installation](#installation)
+  - [System Requirements](#system-requirements)
+  - [Installing on Windows](#installing-on-windows)
+  - [Installing on Linux](#installing-on-linux)
+  - [Installing on macOS](#installing-on-macos)
+  - [Installer Options](#installer-options)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+
+---
+
+## About NovaEdit
 
 NovaEdit is a free, cross-platform code editor designed to provide a fast, clean, and beginner-friendly development experience while remaining powerful enough to grow with experienced developers.
 
-Unlike traditional text editors that focus solely on editing files, NovaEdit is designed to become a complete project workspace. It combines code editing, project organization, optional AI assistance, and community-driven feature development.
+Unlike traditional text editors that focus solely on editing files, NovaEdit is designed to become a complete **project workspace**. It combines code editing, project organization, optional AI assistance, and community-driven feature development.
 
 The goal is not to replace every professional IDE overnight. Instead, NovaEdit aims to provide a modern alternative that starts lightweight and gradually expands through new features and community feedback.
 
 Whether you're writing a Python script, designing a website, or managing multiple projects, NovaEdit is built to keep your workflow organized.
 
-Back to Top
+**[⬆ back to top](#table-of-contents)**
 
-⸻
+---
 
-Why NovaEdit Exists
+## Why NovaEdit Exists
 
 NovaEdit began as a personal project to solve problems experienced with existing editors.
 
@@ -50,249 +82,532 @@ Many code editors have become increasingly large, require numerous extensions, o
 
 NovaEdit aims to solve these problems by focusing on:
 
-* Simplicity
-* Performance
-* Organization
-* Cross-platform compatibility
-* Modern user interface
-* Optional advanced features instead of mandatory complexity
+- Simplicity
+- Performance
+- Organization
+- Cross-platform compatibility
+- Modern user interface
+- Optional advanced features instead of mandatory complexity
 
 The philosophy behind NovaEdit is simple:
 
-Start small. Grow when needed.
+> **Start small. Grow when needed.**
 
 Users should never feel overwhelmed by unnecessary tools. Advanced functionality should always remain optional.
 
-Back to Top
+**[⬆ back to top](#table-of-contents)**
 
-⸻
+---
 
-Project Goals
+## Project Goals
 
 NovaEdit has several long-term goals.
 
-Simple
+| Goal | Description |
+|---|---|
+| **Simple** | The editor should remain easy to understand, even for someone learning programming for the first time. |
+| **Fast** | The application should launch quickly, open projects quickly, and avoid unnecessary background processes whenever possible. |
+| **Cross-Platform** | NovaEdit supports Windows, Linux, and macOS. All three platforms should receive the same core editing experience. |
+| **Modular** | Features such as AI, plugins, additional language packs, and future developer tools are intended to be optional whenever practical. |
+| **Community-Driven** | Feedback, bug reports, feature requests, and community contributions will help shape future releases. |
 
-The editor should remain easy to understand, even for someone learning programming for the first time.
+**[⬆ back to top](#table-of-contents)**
 
-Fast
+---
 
-The application should launch quickly, open projects quickly, and avoid unnecessary background processes whenever possible.
+## Current Status
 
-Cross Platform
+NovaEdit is currently under **active development**.
 
-NovaEdit is designed to support:
+- The initial release focuses on providing a stable, reliable editing experience.
+- Some features described throughout this document are not yet available.
+- If a feature is marked as **Planned**, it is not currently implemented.
+- The roadmap may change as development continues.
 
-* Windows
-* Linux
-* macOS
+**[⬆ back to top](#table-of-contents)**
 
-All three platforms should receive the same core editing experience.
+---
 
-Modular
+## Features
 
-Features such as AI, plugins, additional language packs, and future developer tools are intended to be optional whenever practical.
+### Current Features (Version 0.1)
 
-Community Driven
-
-Feedback, bug reports, feature requests, and community contributions will help shape future releases.
-
-Back to Top
-
-⸻
-
-Current Status
-
-NovaEdit is currently under active development.
-
-The initial release focuses on providing a stable, reliable editing experience.
-
-Some planned features described throughout this document are not yet available.
-
-If a feature is marked as Planned, it is not currently implemented.
-
-The roadmap may change as development continues.
-
-Back to Top
-
-⸻
-
-Features
-
-Current Features (Planned for Version 0.1)
-
-* Modern code editor
-* Multiple document tabs
-* Syntax highlighting
-* File explorer
-* Project workspaces
-* Theme support
-* Custom fonts
-* Adjustable font sizes
-* Line numbers
-* Search
-* Replace
-* Dark mode
-* Light mode
-* Auto-save
-* Custom settings
-* Cross-platform support
-* Project configuration
-* Workspace management
+| Feature | Status |
+|---|---|
+| Modern code editor | ✅ In Progress |
+| Multiple document tabs | ✅ In Progress |
+| Syntax highlighting | ✅ In Progress |
+| File explorer | ✅ In Progress |
+| Project workspaces | ✅ In Progress |
+| Theme support | ✅ In Progress |
+| Custom fonts | ✅ In Progress |
+| Adjustable font sizes | ✅ In Progress |
+| Line numbers | ✅ In Progress |
+| Search | ✅ In Progress |
+| Replace | ✅ In Progress |
+| Dark mode | ✅ In Progress |
+| Light mode | ✅ In Progress |
+| Auto-save | ✅ In Progress |
+| Custom settings | ✅ In Progress |
+| Cross-platform support | ✅ In Progress |
+| Project configuration | ✅ In Progress |
+| Workspace management | ✅ In Progress |
 
 More features will be added in future releases.
 
-Back to Top
+### Editor Features
 
-⸻
+NovaEdit focuses on creating a clean editing experience.
 
-Planned Features
+| Feature | Status |
+|---|---|
+| Multiple tabs | Current |
+| Line numbers | Current |
+| Word wrap | Current |
+| Auto indentation | Current |
+| Auto save | Current |
+| Find | Current |
+| Replace | Current |
+| Undo | Current |
+| Redo | Current |
+| Zoom | Current |
+| Custom fonts | Current |
+| Adjustable font size | Current |
+| Dark mode | Current |
+| Light mode | Current |
+| Bracket matching | Current |
+| Syntax highlighting | Current |
+| Highlight current line | Current |
+| Whitespace visualization | Planned |
+| Minimap | Planned |
+| Code folding | Planned |
 
-The following features are planned after the initial release.
+### File Explorer
 
-Version 0.2
+NovaEdit includes a built-in file explorer designed to simplify navigation. Features include:
 
-* Java syntax improvements
-* C# syntax improvements
-* External compiler detection
-* Built-in terminal
-* Git integration
-* Workspace improvements
+- Create files
+- Create folders
+- Rename files
+- Delete files
+- Duplicate files
+- Move files
+- Drag-and-drop support *(planned)*
+- Right-click context menus
+- Project-wide search
 
-Version 0.3
+The file explorer always reflects your project's actual folder structure.
 
-* Nova AI Assistant
-* Plugin system
-* Additional themes
-* Workspace templates
-* AI project memory
-* Documentation browser
+### Themes
 
-Future Versions
+NovaEdit is designed to support extensive customization.
 
-* Extension marketplace
-* Cloud synchronization (optional)
-* Local AI model support
-* Remote development
-* Advanced debugging
-* Collaborative editing
-* Automatic backups
-* Workspace sharing
-* Language server integration
-* Additional programming languages
+Planned built-in themes include:
 
-Planned features may change based on community feedback and development priorities.
+- Nova Dark
+- Nova Light
+- Midnight
+- Arctic
+- Solar
+- Classic
+- High Contrast
 
-Back to Top
+Future versions will support downloadable community themes. Users will also be able to customize:
 
-⸻
+- Colors
+- Fonts
+- Cursor style
+- Icon packs
+- Window appearance
 
-Supported Programming Languages
+### Settings
 
-Version 0.1 (Current)
+NovaEdit stores editor preferences separately from project data. Examples include:
 
-Currently supported languages include:
+- Font size
+- Font family
+- Theme
+- Default project location
+- Startup behavior
+- Autosave interval
+- Search provider
+- Browser preference
+- AI settings
+- Update preferences
 
-* Python
-* JavaScript
-* HTML
-* CSS
-* JSON
-* Markdown
+Settings can be changed at any time without affecting existing projects.
 
-Version 0.2
+### Built-in Browser
 
-* TypeScript
-* YAML
-* TOML
+NovaEdit will eventually include an optional lightweight documentation browser, primarily to access:
 
-Version 0.3
+- Official documentation
+- Tutorials
+- GitHub repositories
+- Programming references
+- Search engines
 
-* Bash
-* SQL
-* PowerShell
-* Dockerfile
+Users can choose their preferred search provider, including:
 
-Version 0.4
+- DuckDuckGo
+- Google
+- Bing
+- Custom search engine
 
-* C
-* C++
-* Go
-* Rust
+If preferred, NovaEdit can instead open links using the user's default web browser.
 
-Version 0.5
+### File Management
 
-* PHP
-* Ruby
-* Perl
-* Lua
+Planned capabilities include:
 
-Version 0.6
+- Open recent projects
+- Favorite projects
+- Automatic project detection
+- Workspace recovery
+- Restore previous session
+- Backup recovery
+- Recent files list
 
-* Kotlin
-* Dart
-* Objective-C
+Future releases may include automatic snapshots to help recover unsaved work.
 
-Version 0.7
+### Search
 
-* R
-* MATLAB
-* Julia
-* Clojure
+NovaEdit includes project-wide search capabilities.
 
-Version 0.8
+Planned search scopes:
 
-* Haskell
-* Elixir
-* F#
-* Lisp
+- Current document
+- Current project
+- Open files
+- Entire workspace
 
-Version 0.9
+Advanced filters may include:
 
-* Java
-* C#
-* Groovy
-* Visual Basic
+- Match case
+- Whole word
+- Regular expressions
+- Include hidden files
+- Exclude folders
 
-Version 0.10 (Public Release)
+### Keyboard Shortcuts
 
-This marks the official public release with all language support stabilized and tested in production.
+NovaEdit is designed to support familiar shortcuts used by many editors, including:
 
-Why isn't compiling supported immediately?
+- New File
+- Open File
+- Save
+- Save As
+- Undo
+- Redo
+- Copy
+- Paste
+- Cut
+- Find
+- Replace
+- Comment Line
+- Duplicate Line
+- Go to Line
+
+Future versions will allow users to customize nearly every keyboard shortcut.
+
+### Automatic Updates
+
+Future releases may include an optional update system. Users will be able to:
+
+- Check for updates manually
+- Enable automatic update checks
+- Skip specific versions
+- View release notes before updating
+
+Automatic updates will always remain optional.
+
+### Privacy
+
+NovaEdit is designed with privacy in mind.
+
+- The editor itself does not require an internet connection to function.
+- Most editing features work entirely offline.
+- If optional online features are introduced in future versions, they will be clearly documented and configurable by the user.
+
+Privacy remains a core design principle throughout the project.
+
+### Accessibility
+
+Planned accessibility features include:
+
+- Adjustable font size
+- Zoom controls
+- High contrast themes
+- Keyboard navigation
+- Screen reader improvements
+- Reduced motion options
+- Custom color themes
+
+Accessibility feedback is always welcome.
+
+### Performance Goals
+
+NovaEdit is designed with performance as a priority. Goals include:
+
+- Fast startup
+- Low memory usage
+- Responsive interface
+- Smooth scrolling
+- Efficient file loading
+- Stable performance on older hardware
+
+Performance optimizations will continue throughout development.
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Roadmap and Planned Features
+
+The table below consolidates all planned milestones into a single, de-duplicated roadmap. Planned features may change based on community feedback and development priorities.
+
+| Version | Focus | Status |
+|---|---|---|
+| **0.1** | Core editor, multiple tabs, syntax highlighting, file explorer, project workspaces, themes, custom fonts, line numbers, search/replace, dark & light mode, auto-save, cross-platform support. Language support: Python, JavaScript, HTML, CSS, JSON, Markdown | 🟡 In Progress |
+| **0.2** | TypeScript, YAML, and TOML support; Java and C# syntax improvements; external compiler detection; built-in terminal; Git integration; workspace improvements | ⚪ Planned |
+| **0.3** | Bash, SQL, PowerShell, and Dockerfile support; Nova AI Assistant; plugin system; additional themes; workspace templates; AI project memory; documentation browser | ⚪ Planned |
+| **0.4** | C, C++, Go, and Rust support | ⚪ Planned |
+| **0.5** | PHP, Ruby, Perl, and Lua support | ⚪ Planned |
+| **0.6** | Kotlin, Dart, and Objective-C support | ⚪ Planned |
+| **0.7** | R, MATLAB, Julia, and Clojure support | ⚪ Planned |
+| **0.8** | Haskell, Elixir, F#, and Lisp support | ⚪ Planned |
+| **0.9** | Java and C# **compilation** support; Groovy and Visual Basic support | ⚪ Planned |
+| **0.10** | **Public release** — all language support stabilized and tested in production; full cross-platform support; community plugins and themes | ⚪ Planned |
+| **Future / Unversioned** | Extension marketplace, optional cloud synchronization, local AI model support, remote development, advanced debugging, collaborative editing, automatic backups, workspace sharing, language server integration, additional programming languages | ⚪ Planned |
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Supported Programming Languages
+
+| Language | Introduced In | Status |
+|---|---|---|
+| Python | 0.1 | ✅ Available |
+| JavaScript | 0.1 | ✅ Available |
+| HTML | 0.1 | ✅ Available |
+| CSS | 0.1 | ✅ Available |
+| JSON | 0.1 | ✅ Available |
+| Markdown | 0.1 | ✅ Available |
+| TypeScript | 0.2 | ⚪ Planned |
+| YAML | 0.2 | ⚪ Planned |
+| TOML | 0.2 | ⚪ Planned |
+| Bash | 0.3 | ⚪ Planned |
+| SQL | 0.3 | ⚪ Planned |
+| PowerShell | 0.3 | ⚪ Planned |
+| Dockerfile | 0.3 | ⚪ Planned |
+| C | 0.4 | ⚪ Planned |
+| C++ | 0.4 | ⚪ Planned |
+| Go | 0.4 | ⚪ Planned |
+| Rust | 0.4 | ⚪ Planned |
+| PHP | 0.5 | ⚪ Planned |
+| Ruby | 0.5 | ⚪ Planned |
+| Perl | 0.5 | ⚪ Planned |
+| Lua | 0.5 | ⚪ Planned |
+| Kotlin | 0.6 | ⚪ Planned |
+| Dart | 0.6 | ⚪ Planned |
+| Objective-C | 0.6 | ⚪ Planned |
+| R | 0.7 | ⚪ Planned |
+| MATLAB | 0.7 | ⚪ Planned |
+| Julia | 0.7 | ⚪ Planned |
+| Clojure | 0.7 | ⚪ Planned |
+| Haskell | 0.8 | ⚪ Planned |
+| Elixir | 0.8 | ⚪ Planned |
+| F# | 0.8 | ⚪ Planned |
+| Lisp | 0.8 | ⚪ Planned |
+| Java *(compilation)* | 0.9 | ⚪ Planned |
+| C# *(compilation)* | 0.9 | ⚪ Planned |
+| Groovy | 0.9 | ⚪ Planned |
+| Visual Basic | 0.9 | ⚪ Planned |
+
+> Version 0.10 marks the official public release, with all language support stabilized and tested in production.
+
+**Note on Java and C#:** syntax highlighting improvements for these languages land in 0.2, but full **compilation support** doesn't arrive until 0.9 — see [Compiler Detection](#compiler-detection) for why.
+
+### Why isn't compiling supported immediately?
 
 Compiling for some languages requires external software such as:
 
-* Java Development Kit (JDK)
-* .NET SDK
-* C/C++ compilers
-* Go toolchain
+- Java Development Kit (JDK)
+- .NET SDK
+- C/C++ compilers
+- Go toolchain
 
-NovaEdit will not bundle these tools.
+NovaEdit will **not** bundle these tools. Instead, future versions will detect whether they are installed and offer setup guidance if they are missing. This approach keeps NovaEdit lightweight while allowing developers to use their preferred compiler versions.
 
-Instead, future versions will detect whether they are installed and offer setup guidance if they are missing.
+**[⬆ back to top](#table-of-contents)**
 
-This approach keeps NovaEdit lightweight while allowing developers to use their preferred compiler versions.
+---
 
-Back to Top
+## Nova AI
 
-⸻
+**Status:** Planned (not available in Version 0.1)
 
-Installation
+Nova AI is planned as an optional assistant designed to help developers understand their projects, write cleaner code, and improve productivity.
+
+Unlike traditional online AI assistants, Nova AI is intended to respect user choice. Users will be able to decide whether they want to use AI features at all. **The editor itself will never require AI functionality.**
+
+### Design Philosophy
+
+Nova AI is intended to assist developers, not replace them. It should:
+
+- Explain code
+- Help debug problems
+- Suggest improvements
+- Generate documentation
+- Answer programming questions
+- Help beginners learn programming concepts
+
+Nova AI should never automatically rewrite an entire project without user approval.
+
+### Planned Capabilities
+
+Future versions may include:
+
+- Explain selected code
+- Generate comments
+- Generate documentation
+- Suggest bug fixes
+- Detect duplicate code
+- Explain compiler errors
+- Generate README files
+- Help organize projects
+- Refactor code
+- Explain APIs
+- Recommend learning resources
+
+### Project Awareness
+
+One long-term goal is for Nova AI to understand the structure of your project instead of only individual files. For example, if a project contains:
+
+```
+Website
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+```
+
+Nova AI should recognize that these files belong to the same project and provide suggestions using that context.
+
+### AI Privacy and Data Use
+
+Nova AI is planned to be optional. If cloud-based AI services are supported in the future, users will always be informed before data is sent to an external provider.
+
+The goal is to support both:
+
+- Cloud AI *(optional)*
+- Local AI models *(planned)*
+
+Users should always remain in control.
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Plugin System
+
+**Status:** Planned
+
+NovaEdit is designed with extensibility in mind. The long-term goal is to support plugins that allow users to customize and expand the editor without modifying the core application.
+
+Possible plugin categories include:
+
+- Themes
+- Language support
+- Linters
+- Formatters
+- AI tools
+- Utilities
+- Productivity tools
+- Build tools
+- Git enhancements
+
+Plugins will eventually be installable from within NovaEdit.
+
+### Plugin Philosophy
+
+The editor should remain lightweight. Users who only need a simple editor should not be forced to install additional features. Plugins allow users to build the experience that best fits their workflow.
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Git Integration
+
+**Status:** Planned
+
+NovaEdit is planned to include built-in Git integration. Future functionality may include:
+
+- Repository detection
+- Commit history
+- Branch switching
+- File differences
+- Commit creation
+- Push
+- Pull
+- Merge support
+- GitHub integration
+- GitLab support
+
+Git support will remain optional. Users who prefer using Git from the command line may continue doing so.
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Compiler Detection
+
+**Status:** Planned for Version 0.2+
+
+NovaEdit is primarily a code editor. It is not intended to replace language-specific compilers. Instead, NovaEdit plans to detect existing compiler installations.
+
+| Language | Detects | If Missing |
+|---|---|---|
+| Python | Python installation | — |
+| Java | OpenJDK, Oracle JDK | Recommends official download sources |
+| C# | .NET SDK | Provides installation guidance |
+
+### Why aren't Java and C# supported immediately?
+
+Java and C# projects require additional software outside of NovaEdit. Rather than bundling compilers directly, NovaEdit will first focus on creating a stable editing experience. Compiler support will come later once detection and configuration can be implemented reliably.
+
+This approach helps keep Version 0.1 focused, stable, and lightweight.
+
+**[⬆ back to top](#table-of-contents)**
+
+---
+
+## Installation
 
 NovaEdit is designed to be easy to install regardless of your operating system. Every official release will include platform-specific installers that guide you through the installation process.
 
-Supported Operating Systems
+**Supported Operating Systems:**
 
-* Windows 10 (64-bit) or newer
-* Windows 11
-* Most modern Linux distributions
-* macOS (Apple Silicon and Intel, planned)
+- Windows 10 (64-bit) or newer
+- Windows 11
+- Most modern Linux distributions
+- macOS (Apple Silicon and Intel) *(planned)*
 
-Note: Support for additional operating systems may be added in future releases.
+> Support for additional operating systems may be added in future releases.
 
-⸻
+### System Requirements
 
-Installing on Windows
+| | Minimum | Recommended |
+|---|---|---|
+| **Processor** | Modern dual-core | Quad-core |
+| **RAM** | 4 GB | 8 GB or more |
+| **Storage** | 500 MB available | SSD |
+| **Display** | 1280×720 | 1920×1080 or higher |
+
+NovaEdit is designed to remain lightweight while scaling well on more powerful hardware.
+
+### Installing on Windows
 
 1. Download the latest Windows installer from the Releases page.
 2. Run the installer.
@@ -302,766 +617,112 @@ Installing on Windows
 6. Complete the installation.
 7. Launch NovaEdit from the Start Menu or Desktop shortcut.
 
-⸻
-
-Installing on Linux
+### Installing on Linux
 
 Linux releases are planned to be available in multiple formats when possible, including:
 
-* AppImage
-* .deb
-* .rpm
+- AppImage
+- `.deb`
+- `.rpm`
 
 Installation methods may vary depending on your distribution.
 
-⸻
+### Installing on macOS
 
-Installing on macOS
+macOS support is planned. The installer will guide you through the installation process using standard macOS application installation methods.
 
-macOS support is planned.
+### Installer Options
 
-The installer will guide you through the installation process using standard macOS application installation methods.
-
-⸻
-
-Installer
-
-NovaEdit uses a guided installer to make setup simple while allowing users to choose optional components.
-
-The editor itself is always required.
+NovaEdit uses a guided installer to make setup simple while allowing users to choose optional components. **The editor itself is always required.**
 
 Optional components may include:
 
-* Nova AI
-* Additional themes
-* Example projects
-* Future language packs
-* Developer tools
+- Nova AI
+- Additional themes
+- Example projects
+- Future language packs
+- Developer tools
 
 Example installer options:
 
-☑ NovaEdit Core (Required)
-☐ Nova AI
-☐ Additional Themes
-☐ Example Projects
-☐ Future Language Packs
+```
+[x] NovaEdit Core (Required)
+[ ] Nova AI
+[ ] Additional Themes
+[ ] Example Projects
+[ ] Future Language Packs
+```
 
 Optional components can also be installed or removed later without reinstalling the entire application.
 
-Back to Top
+**[⬆ back to top](#table-of-contents)**
 
-⸻
+---
 
-System Requirements
+## Frequently Asked Questions
 
-Minimum
+**Is NovaEdit free?**
+Yes. NovaEdit is planned to remain free to use.
 
-* Modern dual-core processor
-* 4 GB RAM
-* 500 MB available storage
-* 1280×720 display
+**Is NovaEdit open source?**
+Yes — the source code is hosted on GitHub under the MIT License.
 
-Recommended
+**Does NovaEdit require an internet connection?**
+No. Most editor features are designed to work completely offline. Some future optional features, such as AI or update checking, may use an internet connection if enabled by the user.
 
-* Quad-core processor
-* 8 GB RAM or more
-* SSD
-* 1920×1080 or higher display
+**Does NovaEdit collect telemetry?**
+The goal is to minimize data collection. If telemetry is ever introduced, it will be optional and clearly documented.
 
-NovaEdit is designed to remain lightweight while scaling well on more powerful hardware.
+**Can I use NovaEdit for commercial projects?**
+Yes. The editor is intended to be suitable for personal, educational, and commercial software development.
 
-Back to Top
+**Does NovaEdit include a compiler?**
+No. NovaEdit is a code editor — compilers remain separate software installed by the user.
 
-⸻
+**Will there be extensions?**
+Yes. An extension system is planned for future releases.
 
-Project Workspaces
+**[⬆ back to top](#table-of-contents)**
 
-One of NovaEdit's primary features is its project workspace system.
+---
 
-Instead of opening unrelated files individually, users can organize projects into dedicated workspaces.
+## Contributing
 
-A workspace stores:
+Contributions of all sizes are welcome. You can help by:
 
-* Project name
-* Folder location
-* Open files
-* Window layout
-* Theme preferences
-* Editor settings
-* Future AI project memory
+- Reporting bugs
+- Suggesting features
+- Improving documentation
+- Fixing issues
+- Testing pre-release versions
+- Reviewing pull requests
+- Creating plugins
+- Developing themes
 
-Example:
+Please read `CONTRIBUTING.md` before opening an issue or submitting a pull request.
 
-My Website
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-└── README.md
+**[⬆ back to top](#table-of-contents)**
 
-Each project remains independent, making it easier to manage multiple applications simultaneously.
+---
 
-Back to Top
+## Credits
 
-⸻
+NovaEdit would not be possible without the many open source projects and developer communities that inspire it. Special thanks to:
 
-File Explorer
-
-NovaEdit includes a built-in file explorer designed to simplify navigation.
-
-Features include:
-
-* Create files
-* Create folders
-* Rename files
-* Delete files
-* Duplicate files
-* Move files
-* Drag-and-drop support (planned)
-* Right-click context menus
-* Project-wide search
-
-The file explorer always reflects your project's actual folder structure.
-
-Back to Top
-
-⸻
-
-Editor Features
-
-NovaEdit focuses on creating a clean editing experience.
-
-Current and planned editor capabilities include:
-
-* Multiple tabs
-* Line numbers
-* Word wrap
-* Auto indentation
-* Auto save
-* Find
-* Replace
-* Undo
-* Redo
-* Zoom
-* Custom fonts
-* Adjustable font size
-* Dark mode
-* Light mode
-* Bracket matching
-* Syntax highlighting
-* Highlight current line
-* Whitespace visualization (planned)
-* Minimap (planned)
-* Code folding (planned)
-
-Additional editor improvements will continue to be added throughout development.
-
-Back to Top
-
-⸻
-
-Themes
-
-NovaEdit is designed to support extensive customization.
-
-Planned built-in themes include:
-
-* Nova Dark
-* Nova Light
-* Midnight
-* Arctic
-* Solar
-* Classic
-* High Contrast
-
-Future versions will support downloadable community themes.
-
-Users will also be able to customize:
-
-* Colors
-* Fonts
-* Cursor style
-* Icon packs
-* Window appearance
-
-Back to Top
-
-⸻
-
-Settings
-
-NovaEdit stores editor preferences separately from project data.
-
-Examples include:
-
-* Font size
-* Font family
-* Theme
-* Default project location
-* Startup behavior
-* Autosave interval
-* Search provider
-* Browser preference
-* AI settings
-* Update preferences
-
-Settings can be changed at any time without affecting existing projects.
-
-Back to Top
-
-⸻
-
-Built-in Browser
-
-NovaEdit will eventually include an optional lightweight documentation browser.
-
-Its primary purpose is to quickly access:
-
-* Official documentation
-* Tutorials
-* GitHub repositories
-* Programming references
-* Search engines
-
-Users can choose their preferred search provider, including:
-
-* DuckDuckGo
-* Google
-* Bing
-* Custom search engine
-
-If preferred, NovaEdit can instead open links using the user's default web browser.
-
-Back to Top
-
-⸻
-
-File Management
-
-NovaEdit is designed to simplify working with files.
-
-Planned capabilities include:
-
-* Open recent projects
-* Favorite projects
-* Automatic project detection
-* Workspace recovery
-* Restore previous session
-* Backup recovery
-* Recent files list
-
-Future releases may include automatic snapshots to help recover unsaved work.
-
-Back to Top
-
-⸻
-
-Search
-
-NovaEdit includes project-wide search capabilities.
-
-Planned search options include:
-
-* Current document
-* Current project
-* Open files
-* Entire workspace
-
-Advanced filters may include:
-
-* Match case
-* Whole word
-* Regular expressions
-* Include hidden files
-* Exclude folders
-
-Back to Top
-
-⸻
-
-Keyboard Shortcuts
-
-NovaEdit is designed to support familiar shortcuts used by many editors.
-
-Examples include:
-
-* New File
-* Open File
-* Save
-* Save As
-* Undo
-* Redo
-* Copy
-* Paste
-* Cut
-* Find
-* Replace
-* Comment Line
-* Duplicate Line
-* Go to Line
-
-Future versions will allow users to customize nearly every keyboard shortcut.
-
-Back to Top
-
-⸻
-
-Automatic Updates
-
-Future releases may include an optional update system.
-
-Users will be able to:
-
-* Check for updates manually
-* Enable automatic update checks
-* Skip specific versions
-* View release notes before updating
-
-Automatic updates will always remain optional.
-
-Back to Top
-
-⸻
-
-Privacy
-
-NovaEdit is designed with privacy in mind.
-
-The editor itself does not require an internet connection to function.
-
-Most editing features work entirely offline.
-
-If optional online features are introduced in future versions, they will be clearly documented and configurable by the user.
-
-Privacy remains a core design principle throughout the project.
-
-Back to Top
-
-⸻
-
-Nova AI
-
-Status: Planned (Not Available in Version 0.1)
-
-Nova AI is planned as an optional assistant designed to help developers understand their projects, write cleaner code, and improve productivity.
-
-Unlike traditional online AI assistants, Nova AI is intended to respect user choice. Users will be able to decide whether they want to use AI features at all.
-
-The editor itself will never require AI functionality.
-
-Design Philosophy
-
-Nova AI is intended to assist developers, not replace them.
-
-It should:
-
-* Explain code
-* Help debug problems
-* Suggest improvements
-* Generate documentation
-* Answer programming questions
-* Help beginners learn programming concepts
-
-Nova AI should never automatically rewrite an entire project without user approval.
-
-⸻
-
-Planned Capabilities
-
-Future versions may include:
-
-* Explain selected code
-* Generate comments
-* Generate documentation
-* Suggest bug fixes
-* Detect duplicate code
-* Explain compiler errors
-* Generate README files
-* Help organize projects
-* Refactor code
-* Explain APIs
-* Recommend learning resources
-
-⸻
-
-Project Awareness
-
-One long-term goal is for Nova AI to understand the structure of your project instead of only individual files.
-
-For example, if your project contains:
-
-Website
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-
-Nova AI should recognize that these files belong to the same project and provide suggestions using that context.
-
-⸻
-
-Privacy
-
-Nova AI is planned to be optional.
-
-If cloud-based AI services are supported in the future, users will always be informed before data is sent to an external provider.
-
-The goal is to support both:
-
-* Cloud AI (optional)
-* Local AI models (planned)
-
-Users should always remain in control.
-
-Back to Top
-
-⸻
-
-Plugin System
-
-Status: Planned
-
-NovaEdit is designed with extensibility in mind.
-
-The long-term goal is to support plugins that allow users to customize and expand the editor without modifying the core application.
-
-Possible plugin categories include:
-
-* Themes
-* Language support
-* Linters
-* Formatters
-* AI tools
-* Utilities
-* Productivity tools
-* Build tools
-* Git enhancements
-
-Plugins will eventually be installable from within NovaEdit.
-
-⸻
-
-Plugin Philosophy
-
-The editor should remain lightweight.
-
-Users who only need a simple editor should not be forced to install additional features.
-
-Plugins allow users to build the experience that best fits their workflow.
-
-Back to Top
-
-⸻
-
-Git Integration
-
-Status: Planned
-
-NovaEdit is planned to include built-in Git integration.
-
-Future functionality may include:
-
-* Repository detection
-* Commit history
-* Branch switching
-* File differences
-* Commit creation
-* Push
-* Pull
-* Merge support
-* GitHub integration
-* GitLab support
-
-Git support will remain optional.
-
-Users who prefer using Git from the command line may continue doing so.
-
-Back to Top
-
-⸻
-
-Compiler Detection
-
-Status: Planned for Version 0.2+
-
-NovaEdit is primarily a code editor.
-
-It is not intended to replace language-specific compilers.
-
-Instead, NovaEdit plans to detect existing compiler installations.
-
-Examples include:
-
-Python
-
-Detect Python installation.
-
-Java
-
-Detect:
-
-* OpenJDK
-* Oracle JDK
-
-If Java is not installed, NovaEdit may recommend official download sources.
-
-C#
-
-Detect:
-
-* .NET SDK
-
-If unavailable, users will receive guidance for installing the required tools.
-
-⸻
-
-Why aren't Java and C# supported immediately?
-
-Java and C# projects require additional software outside of NovaEdit.
-
-Rather than bundling compilers directly, NovaEdit will first focus on creating a stable editing experience.
-
-Compiler support will come later once detection and configuration can be implemented reliably.
-
-This approach helps keep Version 0.1 focused, stable, and lightweight.
-
-Back to Top
-
-⸻
-
-Performance Goals
-
-NovaEdit is designed with performance as a priority.
-
-Goals include:
-
-* Fast startup
-* Low memory usage
-* Responsive interface
-* Smooth scrolling
-* Efficient file loading
-* Stable performance on older hardware
-
-Performance optimizations will continue throughout development.
-
-Back to Top
-
-⸻
-
-Accessibility
-
-NovaEdit aims to be usable by as many developers as possible.
-
-Planned accessibility features include:
-
-* Adjustable font size
-* Zoom controls
-* High contrast themes
-* Keyboard navigation
-* Screen reader improvements
-* Reduced motion options
-* Custom color themes
-
-Accessibility feedback is always welcome.
-
-Back to Top
-
-⸻
-
-Frequently Asked Questions
-
-Is NovaEdit free?
-
-Yes.
-
-NovaEdit is planned to remain free to use.
-
-⸻
-
-Is NovaEdit open source?
-
-The source code is hosted on GitHub under the MIT License.
-
-⸻
-
-Does NovaEdit require an internet connection?
-
-No.
-
-Most editor features are designed to work completely offline.
-
-Some future optional features, such as AI or update checking, may use an internet connection if enabled by the user.
-
-⸻
-
-Does NovaEdit collect telemetry?
-
-The goal is to minimize data collection.
-
-If telemetry is ever introduced, it will be optional and clearly documented.
-
-⸻
-
-Can I use NovaEdit for commercial projects?
-
-Yes.
-
-The editor is intended to be suitable for personal, educational, and commercial software development.
-
-⸻
-
-Does NovaEdit include a compiler?
-
-No.
-
-NovaEdit is a code editor.
-
-Compilers remain separate software installed by the user.
-
-⸻
-
-Will there be extensions?
-
-Yes.
-
-An extension system is planned for future releases.
-
-Back to Top
-
-⸻
-
-Credits
-
-NovaEdit would not be possible without the many open source projects and developer communities that inspire it.
-
-Special thanks to:
-
-* The Python community
-* Qt and PySide contributors
-* Open source maintainers
-* GitHub
-* Everyone who contributes feedback, bug reports, feature requests, documentation, testing, and code
+- The Python community
+- Qt and PySide contributors
+- Open source maintainers
+- GitHub
+- Everyone who contributes feedback, bug reports, feature requests, documentation, testing, and code
 
 Community contributions help improve NovaEdit for everyone.
 
-Back to Top
+**[⬆ back to top](#table-of-contents)**
 
-⸻
+---
 
-Contributing
+## License
 
-Contributions of all sizes are welcome.
+NovaEdit is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for the full license text.
 
-You can help by:
-
-* Reporting bugs
-* Suggesting features
-* Improving documentation
-* Fixing issues
-* Testing pre-release versions
-* Reviewing pull requests
-* Creating plugins
-* Developing themes
-
-Please read CONTRIBUTING.md before opening an issue or submitting a pull request.
-
-Back to Top
-
-⸻
-
-License
-
-NovaEdit is licensed under the MIT License.
-
-See the LICENSE file for the full license text.
-
-Back to Top
-
-⸻
-
-Roadmap
-
-Current development priorities include:
-
-Version 0.1
-
-* Stable editor
-* Project workspaces
-* File explorer
-* Themes
-* Search
-* Settings
-* Cross-platform support
-* Core language support (Python, JavaScript, HTML, CSS, JSON, Markdown)
-
-Version 0.2
-
-* TypeScript support
-* YAML support
-* TOML support
-* Java syntax improvements
-* C# syntax improvements
-* Compiler detection
-
-Version 0.3
-
-* Bash support
-* SQL support
-* PowerShell support
-* Dockerfile support
-* Nova AI Assistant
-* Plugin system
-* Additional themes
-* Workspace templates
-
-Version 0.4
-
-* C support
-* C++ support
-* Go support
-* Rust support
-
-Version 0.5
-
-* PHP support
-* Ruby support
-* Perl support
-* Lua support
-
-Version 0.6
-
-* Kotlin support
-* Dart support
-* Objective-C support
-
-Version 0.7
-
-* R support
-* MATLAB support
-* Julia support
-* Clojure support
-
-Version 0.8
-
-* Haskell support
-* Elixir support
-* F# support
-* Lisp support
-
-Version 0.9
-
-* Java compilation support
-* C# compilation support
-* Groovy support
-* Visual Basic support
-
-Version 0.10
-
-* Public release
-* Stable, feature-complete editor
-* Community plugins and themes
-* Full cross-platform support
-
-The roadmap is subject to change based on community feedback and development priorities.
-
-Back to Top
+**[⬆ back to top](#table-of-contents)**
