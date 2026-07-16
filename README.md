@@ -32,11 +32,11 @@ About NovaEdit
 
 NovaEdit is a free, cross-platform code editor designed to provide a fast, clean, and beginner-friendly development experience while remaining powerful enough to grow with experienced developers.
 
-Unlike traditional text editors that focus solely on editing files, NovaEdit is designed to become a complete project workspace. It combines code editing, project organization, optional AI assistance, customization, and future plugin support into a single application.
+Unlike traditional text editors that focus solely on editing files, NovaEdit is designed to become a complete project workspace. It combines code editing, project organization, optional AI assistance, and community-driven feature development.
 
 The goal is not to replace every professional IDE overnight. Instead, NovaEdit aims to provide a modern alternative that starts lightweight and gradually expands through new features and community feedback.
 
-Whether you’re writing a Python script, designing a website, or managing multiple projects, NovaEdit is built to keep your workflow organized.
+Whether you're writing a Python script, designing a website, or managing multiple projects, NovaEdit is built to keep your workflow organized.
 
 Back to Top
 
@@ -46,7 +46,7 @@ Why NovaEdit Exists
 
 NovaEdit began as a personal project to solve problems experienced with existing editors.
 
-Many code editors have become increasingly large, require numerous extensions, or can be difficult for beginners to understand. Others have display or compatibility issues depending on hardware configurations.
+Many code editors have become increasingly large, require numerous extensions, or can be difficult for beginners to understand. Others have display or compatibility issues depending on hardware configuration.
 
 NovaEdit aims to solve these problems by focusing on:
 
@@ -189,36 +189,83 @@ Back to Top
 
 Supported Programming Languages
 
-Version 0.1
+Version 0.1 (Current)
 
-Official support includes:
+Currently supported languages include:
 
 * Python
 * JavaScript
-* TypeScript
 * HTML
 * CSS
 * JSON
-* YAML
 * Markdown
+
+Version 0.2
+
+* TypeScript
+* YAML
+* TOML
+
+Version 0.3
+
 * Bash
 * SQL
+* PowerShell
+* Dockerfile
 
-These languages were selected because they are text-based and do not require NovaEdit to provide compiler integration.
+Version 0.4
 
-Planned for Version 0.2
+* C
+* C++
+* Go
+* Rust
+
+Version 0.5
+
+* PHP
+* Ruby
+* Perl
+* Lua
+
+Version 0.6
+
+* Kotlin
+* Dart
+* Objective-C
+
+Version 0.7
+
+* R
+* MATLAB
+* Julia
+* Clojure
+
+Version 0.8
+
+* Haskell
+* Elixir
+* F#
+* Lisp
+
+Version 0.9
 
 * Java
 * C#
+* Groovy
+* Visual Basic
 
-These languages will initially receive syntax highlighting and editing support.
+Version 0.10 (Public Release)
 
-Why isn’t compiling supported immediately?
+This marks the official public release with all language support stabilized and tested in production.
 
-Compiling Java and C# requires external software such as:
+Why isn't compiling supported immediately?
+
+Compiling for some languages requires external software such as:
 
 * Java Development Kit (JDK)
 * .NET SDK
+* C/C++ compilers
+* Go toolchain
 
 NovaEdit will not bundle these tools.
 
@@ -227,10 +274,6 @@ Instead, future versions will detect whether they are installed and offer setup 
 This approach keeps NovaEdit lightweight while allowing developers to use their preferred compiler versions.
 
 Back to Top
-
-
-
-
 
 ⸻
 
@@ -333,7 +376,7 @@ Back to Top
 
 Project Workspaces
 
-One of NovaEdit’s primary features is its project workspace system.
+One of NovaEdit's primary features is its project workspace system.
 
 Instead of opening unrelated files individually, users can organize projects into dedicated workspaces.
 
@@ -378,7 +421,7 @@ Features include:
 * Right-click context menus
 * Project-wide search
 
-The file explorer always reflects your project’s actual folder structure.
+The file explorer always reflects your project's actual folder structure.
 
 Back to Top
 
@@ -487,7 +530,7 @@ Users can choose their preferred search provider, including:
 * Bing
 * Custom search engine
 
-If preferred, NovaEdit can instead open links using the user’s default web browser.
+If preferred, NovaEdit can instead open links using the user's default web browser.
 
 Back to Top
 
@@ -593,10 +636,6 @@ If optional online features are introduced in future versions, they will be clea
 Privacy remains a core design principle throughout the project.
 
 Back to Top
-
-
-
-
 
 ⸻
 
@@ -776,7 +815,7 @@ If unavailable, users will receive guidance for installing the required tools.
 
 ⸻
 
-Why aren’t Java and C# supported immediately?
+Why aren't Java and C# supported immediately?
 
 Java and C# projects require additional software outside of NovaEdit.
 
@@ -824,45 +863,6 @@ Planned accessibility features include:
 * Custom color themes
 
 Accessibility feedback is always welcome.
-
-Back to Top
-
-⸻
-
-Planned Language Support
-
-Version 0.1
-
-* Python
-* JavaScript
-* HTML
-* CSS
-* JSON
-* Markdown
-
-Version 0.2
-
-* Java
-* C#
-
-Future Releases
-
-* TypeScript
-* XML
-* YAML
-* TOML
-* SQL
-* Bash
-* PowerShell
-* PHP
-* Lua
-* Go
-* Rust
-* Kotlin
-* Swift
-* Dart
-
-Additional languages may be added over time based on community feedback.
 
 Back to Top
 
@@ -992,275 +992,76 @@ Version 0.1
 * Search
 * Settings
 * Cross-platform support
+* Core language support (Python, JavaScript, HTML, CSS, JSON, Markdown)
 
 Version 0.2
 
-* Java support
-* C# support
+* TypeScript support
+* YAML support
+* TOML support
+* Java syntax improvements
+* C# syntax improvements
 * Compiler detection
-* Built-in terminal
-* Git integration
 
 Version 0.3
 
-* Nova AI
+* Bash support
+* SQL support
+* PowerShell support
+* Dockerfile support
+* Nova AI Assistant
 * Plugin system
-* Additional customization
-* Workspace improvements
+* Additional themes
+* Workspace templates
 
-Future
+Version 0.4
 
-* Extension Marketplace
-* Local AI support
-* Remote development
-* Collaborative editing
-* Debugging tools
-* Advanced project management
-* Additional language support
+* C support
+* C++ support
+* Go support
+* Rust support
 
-Development priorities may change as the project evolves.
+Version 0.5
 
-Back to Top
+* PHP support
+* Ruby support
+* Perl support
+* Lua support
 
-⸻
+Version 0.6
 
-Final Vision
+* Kotlin support
+* Dart support
+* Objective-C support
 
-NovaEdit aims to become more than just another text editor.
+Version 0.7
 
-The long-term vision is to provide a modern, lightweight, customizable development environment that feels approachable to beginners while remaining powerful enough for experienced developers.
+* R support
+* MATLAB support
+* Julia support
+* Clojure support
 
-Rather than competing by adding every feature imaginable, NovaEdit focuses on thoughtful design, performance, modularity, and user choice.
+Version 0.8
 
-Whether you’re writing your first Python script, building a website, or managing a large software project, NovaEdit is intended to grow alongside your skills.
+* Haskell support
+* Elixir support
+* F# support
+* Lisp support
 
-Thank you for checking out NovaEdit.
+Version 0.9
 
-If you’d like to contribute, report a bug, suggest a feature, or follow development, visit the GitHub repository and join the community.
+* Java compilation support
+* C# compilation support
+* Groovy support
+* Visual Basic support
 
+Version 0.10
 
+* Public release
+* Stable, feature-complete editor
+* Community plugins and themes
+* Full cross-platform support
 
-
-
-⸻
-
-Important Notes
-
-Project Status
-
-NovaEdit is currently under active development. Features, user interface elements, documentation, and project goals may change as development progresses. Some functionality described in this document represents planned features and may not yet be available.
-
-Version Information
-
-Unless otherwise stated, features described in this README refer to the latest planned release. If a feature is marked as Planned, Future, or Coming Soon, it is not currently available.
-
-Cross-Platform First
-
-NovaEdit is designed to provide a consistent experience across Windows, Linux, and macOS. While some platform-specific features may differ, the overall editing experience should remain familiar regardless of operating system.
-
-Offline First
-
-The editor is designed to function without an internet connection. Internet access is only expected to be required for optional services such as update checking, downloading plugins, future AI providers, or accessing online documentation.
-
-Community Feedback
-
-NovaEdit is a community-driven project. Suggestions, feature requests, bug reports, and constructive feedback are encouraged and help shape future releases.
-
-⸻
-
-Project Philosophy
-
-NovaEdit is built around several core principles.
-
-Keep It Lightweight
-
-Features should improve productivity without making the application unnecessarily large or complicated.
-
-User Choice
-
-Optional features should remain optional whenever possible.
-
-Privacy
-
-Users should always understand when information leaves their computer.
-
-Performance
-
-Fast startup times, responsive editing, and efficient resource usage are long-term priorities.
-
-Learnability
-
-NovaEdit should remain approachable for beginners while still offering tools that experienced developers appreciate.
+The roadmap is subject to change based on community feedback and development priorities.
 
 Back to Top
-
-⸻
-
-Distribution
-
-NovaEdit is planned to be distributed through multiple official sources.
-
-Possible distribution methods include:
-
-* GitHub Releases
-* Official NovaEdit Website
-* Microsoft Store (planned)
-* Steam (planned)
-* Linux package repositories (planned)
-* Additional package managers where appropriate
-
-Availability may vary depending on operating system and release version.
-
-Back to Top
-
-⸻
-
-Steam Availability (Planned)
-
-NovaEdit may eventually become available on Steam as a free application.
-
-If released on Steam:
-
-* The editor will remain free to download.
-* Core editing functionality will remain free.
-* The Steam version will provide the same editing experience as other official releases.
-* Steam Cloud integration may be explored in the future.
-* Steam achievements may be considered for fun, educational milestones.
-
-NovaEdit is not intended to become a game, and it will never include gameplay mechanics or “pay-to-win” systems.
-
-Future optional purchases, if introduced, would focus on supporting continued development and may include cosmetic or convenience items such as:
-
-* Theme packs
-* Icon packs
-* Cosmetic profile customization
-* Optional supporter bundles
-
-These ideas are exploratory and are not planned for Version 0.1.
-
-Back to Top
-
-⸻
-
-Advertising
-
-NovaEdit does not display advertisements.
-
-The goal is to provide a clean and distraction-free development environment.
-
-There are currently no plans to introduce banner ads, pop-up advertisements, or third-party advertising networks into the editor.
-
-Back to Top
-
-⸻
-
-Monetization
-
-NovaEdit is intended to remain free.
-
-If optional monetization is introduced in the future, it will never remove access to the editor itself.
-
-Potential future support options may include:
-
-* Donations
-* Supporter Packs
-* Cosmetic Themes
-* Icon Packs
-* Optional AI service subscriptions (if external AI providers require usage fees)
-
-Any optional purchases would help fund continued development without restricting access to the core editor.
-
-Back to Top
-
-⸻
-
-Reporting Bugs
-
-If you discover a bug, please include as much information as possible when opening an issue.
-
-Helpful information includes:
-
-* NovaEdit version
-* Operating system
-* Steps to reproduce
-* Expected behavior
-* Actual behavior
-* Screenshots (if applicable)
-* Crash logs (if available)
-
-Detailed reports help us resolve issues more quickly.
-
-Back to Top
-
-⸻
-
-Feature Requests
-
-Have an idea?
-
-Open a GitHub Discussion or Feature Request.
-
-When suggesting a feature, consider including:
-
-* The problem you’re trying to solve
-* Your proposed solution
-* Alternative ideas
-* Mockups or screenshots (optional)
-
-Every suggestion is appreciated, even if it cannot be implemented immediately.
-
-Back to Top
-
-⸻
-
-Security
-
-If you discover a security vulnerability, please avoid creating a public issue until the problem has been reviewed.
-
-See SECURITY.md for instructions on responsibly reporting security concerns.
-
-Back to Top
-
-⸻
-
-Acknowledgements
-
-NovaEdit is inspired by many excellent development tools and the open source community.
-
-While NovaEdit has its own goals and identity, appreciation is extended to projects such as:
-
-* Notepad++
-* Visual Studio Code
-* Sublime Text
-* Geany
-* Vim
-* Neovim
-* Kate
-* PyCharm
-* Qt Creator
-
-These projects have influenced software development workflows for millions of developers.
-
-Back to Top
-
-⸻
-
-Disclaimer
-
-NovaEdit is provided “as is” under the terms of the MIT License.
-
-Although every effort is made to provide a stable and reliable editor, no software is completely free from bugs.
-
-Always maintain backups of important work.
-
-Back to Top
-
-⸻
-
-Thank You
-
-Whether you’re writing your very first “Hello, World!” program or maintaining a large software project, thank you for considering NovaEdit.
-
-We hope NovaEdit becomes a tool that helps you learn, create, and build amazing software.
-
-Happy coding!
