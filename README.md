@@ -195,10 +195,14 @@ Official support includes:
 
 * Python
 * JavaScript
+* TypeScript
 * HTML
 * CSS
 * JSON
+* YAML
 * Markdown
+* Bash
+* SQL
 
 These languages were selected because they are text-based and do not require NovaEdit to provide compiler integration.
 
